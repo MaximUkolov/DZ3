@@ -26,3 +26,29 @@
 // double R = Math.Sqrt(Math.Pow(X2 - X1, 2) + Math.Pow(Y2 - Y1, 2) + Math.Pow(Z2 - Z1, 2));
 // Console.WriteLine(R);
 
+
+
+//Задача 23. Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
+
+bool one = true;
+while (one)
+{
+try
+{
+Console.Write("Введите число N: ");
+int num = Convert.ToInt32(Console.ReadLine());
+int index = 0;
+for(int i = 1; i <= num; i++)
+{
+index = (int)Math.Pow(i, 3);
+if (i == num) Console.Write(index + ".");
+else
+Console.Write(index + ", ");
+}
+one = false;
+}
+catch
+{
+Console.WriteLine("Ошибка ввода, попробуйте еще раз: ");
+}
+}
