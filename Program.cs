@@ -1,11 +1,23 @@
-﻿//Задача 25. Напишите цикл, который принимает на вход два числа (A и B) и возводит число A в натуральную степень B.
+﻿
+//Задача 19. Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
 
-// Console.Write("Введите число A: ");
+// Console.Write("Введите пятизначное число: ");
 // int a = Convert.ToInt32(Console.ReadLine());
-// Console.Write("Введите число B: ");
-// int b = Convert.ToInt32(Console.ReadLine());
-// int i = Convert.ToInt32(Math.Pow(a, b));
-// Console.WriteLine(i);
+// int first = a / 10000;
+// int second = (a % 10000) / 1000;
+// int therd = (a % 1000) / 100;
+// int fourth = (a % 100) / 10;
+// int fith = (a % 10);
+//     if (first==fith & second==fourth)
+//     {
+//         Console.WriteLine("Число является палиндромом");
+//     }
+//     else
+//     {
+//         Console.WriteLine("Число не является палиндромом");
+//     }
+
+
 
 
 
@@ -30,25 +42,25 @@
 
 //Задача 23. Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
 
-bool one = true;
-while (one)
-{
-try
-{
-Console.Write("Введите число N: ");
-int num = Convert.ToInt32(Console.ReadLine());
-int index = 0;
-for(int i = 1; i <= num; i++)
-{
-index = (int)Math.Pow(i, 3);
-if (i == num) Console.Write(index + ".");
-else
-Console.Write(index + ", ");
-}
-one = false;
-}
-catch
-{
-Console.WriteLine("Ошибка ввода, попробуйте еще раз: ");
-}
-}
+// bool one = true;
+// while (one)
+// {
+// try
+// {
+// Console.Write("Введите число N: ");
+// int num = Convert.ToInt32(Console.ReadLine());
+// int index = 0;
+// for(int i = 1; i <= num; i++)
+// {
+// index = (int)Math.Pow(i, 3);
+// if (i == num) Console.Write(index + ".");
+// else
+// Console.Write(index + ", ");
+// }
+// one = false;
+// }
+// catch
+// {
+// Console.WriteLine("Ошибка, повторите ввод: ");
+// }
+// }
